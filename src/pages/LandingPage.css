@@ -48,50 +48,7 @@ body {
   margin: 0 auto;
 }
 
-.PageHeader {
-  width: 100vw;
-  position: absolute;
-  top: 0%;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
-}
 
-.PageHeader .NavBar ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-  padding-top: 10px;
-}
-
-.PageHeader .NavBar ul li {
-  margin-left: 4vw;
-  font-family: var(--font-raleway);
-  color: rgba(30, 33, 29, 1);
-  font-size: 1.1vw;
-  cursor: pointer;
-}
-
-.PageHeader .NavBar li:nth-child(4) {
-  color: rgba(245, 245, 245, 1);
-}
-
-.PageHeader .Logo {
-  margin-left: 70px;
-  cursor: pointer;
-}
-.PageHeader .MobileNav {
-  display: none;
-}
-
-.PageHeader .ExternalLink {
-  margin-right: 50px;
-  cursor: pointer;
-}
-
-.PageHeader .ExternalLink .ExternalLogo {
-  height: 3em;
-}
 
 .LandingPageContainer .InformationContainer .SiteInfo {
   width: 80%;
@@ -207,41 +164,7 @@ body {
     margin: 0 auto;
   }
 
-  .PageHeader {
-    width: 100vw;
-    position: absolute;
-    top: 0%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-
-  .PageHeader .NavBar ul {
-    display: none;
-  }
-
-  .PageHeader .Logo {
-    margin-left: 20px;
-    cursor: pointer;
-    width: 10vw;
-    height: 10vw;
-  }
-
-  .PageHeader .Logo .SiteLogo {
-    height: 2em;
-  }
-
-  .PageHeader .MobileNav {
-    display: contents;
-  }
-
-  .PageHeader .MobileNav .icon {
-    margin-right: 20px;
-  }
-
-  .PageHeader .ExternalLink {
-    display: none;
-  }
+  
 
   .LandingPageContainer .InformationContainer .SiteInfo {
     width: 90vw;
@@ -381,43 +304,7 @@ body {
     margin: 0 auto;
   }
 
-  .PageHeader {
-    width: 100vw;
-    position: absolute;
-    top: 0%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    align-items: center;
-  }
-
-  .PageHeader .NavBar ul {
-    display: none;
-  }
-
-  .PageHeader .Logo {
-    margin-left: 20px;
-    cursor: pointer;
-    width: fit-content;
-    height: fit-content;
-  }
-
-  .PageHeader .Logo .SiteLogo {
-    height: 3em;
-  }
-
-  .PageHeader .MobileNav {
-    display: contents;
-  }
-
-  .PageHeader .MobileNav .icon {
-    margin-right: 20px;
-  }
-
-  .PageHeader .ExternalLink {
-    display: none;
-  }
-
+  
   .LandingPageContainer .InformationContainer .SiteInfo {
     width: 90vw;
     margin: 0 auto;
