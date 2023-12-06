@@ -110,10 +110,6 @@ body {
   margin-left: 20px;
 }
 
-.MobileNavBar {
-  display: none;
-}
-
 .water-mark {
   color: rgba(187, 199, 183, 0.3);
   font-family: var(--font-raleway);

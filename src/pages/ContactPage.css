@@ -187,3 +187,265 @@
   left: -5%;
   z-index: 1;
 }
+
+
+@media screen and (max-width: 600px) {
+
+  body{
+    overflow-x: hidden;
+  }
+
+.contact-page-container {
+  display: flex;
+  flex-direction: column-reverse;
+  height: fit-content;
+  padding-top: 100px;
+  overflow-x: hidden;
+}
+
+.contact-page-container .social-media-icons {
+    width: 100%;
+    height: 25vw;
+    position: relative;
+    overflow-y: visible;
+  }
+  
+  .contact-page-container .social-media-icons div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;    
+  }
+  
+  .contact-page-container .social-media-icons img {
+    margin: 0 auto;
+    width: 25vw;
+    height: 25vw;
+  }
+  
+  .contact-page-container .contact-section {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .contact-page-container .contact-section .form-container {
+    width: 100%;
+    height: fit-content;
+    background-color: #5c7b52;
+    display: flex;
+    justify-content: center;
+    white-space: wrap;
+    padding-bottom: 20px;
+  }
+  
+  .contact-page-container .contact-section .image {
+    width: 100%;
+    height: 200px;
+    background-image: url("C:\Users\Ismail\Desktop\ClientProject1\client\src\assets\contactImageMobile.png");
+    background-size: cover;
+  }
+  
+  .contact-page-container .contact-section .image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .contact-page-container .contact-section .form-container form {
+    width: 100%;
+    height: fit-content;
+    margin-top: 10px;
+  }
+  
+  .contact-page-container .contact-section .form-container div {
+    margin-top: 30px;
+    width: 90%;
+    font-family: var(--font-raleway);
+    font-size: 8vw;
+    
+  }
+  
+  .contact-page-container .contact-section .form-container form label {
+    
+    font-size: 5vw;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    margin-top: 30px;
+  }
+  
+  .contact-page-container .contact-section .form-container form input {
+    margin-left: 20px;
+    width: 85%;
+    padding: 10px 5px;
+  }
+  
+  .contact-page-container .contact-section .form-container form textarea {
+  
+    margin-left: 20px;
+    width: 90%;
+    max-height: 100px;
+    min-height: 100px;
+  }
+  
+  .contact-page-container
+    .contact-section
+    .form-container
+    form
+    input::placeholder {
+    font-size: 4vw;
+  }
+  
+  .contact-page-container
+    .contact-section
+    .form-container
+    form
+    textarea::placeholder {
+    font-size: 4vw;
+  }
+  
+  .contact-page-container .contact-section .form-container form button {
+    width: 45vw;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 4vw;
+  }
+  
+  .contact-page-container .water-mark-1 {
+    color: rgba(187, 199, 183, 0.3);
+    font-family: var(--font-raleway);
+    font-size: 27vw;
+    left: -5%;
+    top: 20px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+
+    .contact-page-container {
+        display: flex;
+        flex-direction: column-reverse;
+        height: fit-content;
+        padding-top: 200px;
+        overflow-x: hidden;
+      }
+      
+      .contact-page-container .social-media-icons {
+          width: 100%;
+          height: 25vw;
+          position: relative;
+          overflow-y: visible;
+        }
+        
+        .contact-page-container .social-media-icons div {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          position: absolute;    
+        }
+        
+        .contact-page-container .social-media-icons img {
+          margin: 0 auto;
+          width: 25vw;
+          height: 25vw;
+        }
+        
+        .contact-page-container .contact-section {
+          width: 100%;
+          flex-direction: column;
+        }
+        
+        .contact-page-container .contact-section .form-container {
+          width: 100%;
+          height: fit-content;
+          background-color: #5c7b52;
+          display: flex;
+          justify-content: center;
+          white-space: wrap;
+          padding-bottom: 20px;
+        }
+        
+        .contact-page-container .contact-section .image {
+          width: 100%;
+          height: 200px;
+          background-image: url("C:\Users\Ismail\Desktop\ClientProject1\client\src\assets\contactImageMobile.png");
+          background-size: cover;
+        }
+        
+        .contact-page-container .contact-section .image img {
+          width: 100%;
+          height: 100%;
+        }
+      
+        .contact-page-container .contact-section .form-container form {
+          width: 100%;
+          height: fit-content;
+          margin-top: 10px;
+        }
+        
+        .contact-page-container .contact-section .form-container div {
+          margin-top: 30px;
+          width: 90%;
+          font-family: var(--font-raleway);
+          font-size: 8vw;
+          
+        }
+        
+        .contact-page-container .contact-section .form-container form label {
+          
+          font-size: 5vw;
+          margin-left: 20px;
+          margin-bottom: 5px;
+          margin-top: 30px;
+        }
+        
+        .contact-page-container .contact-section .form-container form input {
+          margin-left: 20px;
+          width: 85%;
+          padding: 20px 5px;
+        }
+        
+        .contact-page-container .contact-section .form-container form textarea {
+        
+          margin-left: 20px;
+          width: 90%;
+          max-height: 100px;
+          min-height: 100px;
+        }
+        
+        .contact-page-container
+          .contact-section
+          .form-container
+          form
+          input::placeholder {
+          font-size: 4vw;
+        }
+        
+        .contact-page-container
+          .contact-section
+          .form-container
+          form
+          textarea::placeholder {
+          font-size: 4vw;
+        }
+        
+        .contact-page-container .contact-section .form-container form button {
+          width: 45vw;
+          margin-left: 20px;
+          margin-top: 20px;
+          margin-bottom: 10px;
+          font-size: 4vw;
+        }
+        
+        .contact-page-container .water-mark-1 {
+          color: rgba(187, 199, 183, 0.3);
+          font-family: var(--font-raleway);
+          font-size: 27vw;
+          left: -5%;
+          top: 0px;
+        }
+
+}

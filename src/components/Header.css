@@ -70,6 +70,10 @@ body {
 
   @media screen and (max-width: 600px) {
 
+    body{
+      overflow-x: hidden;
+    }
+
     .PageHeader {
         width: 100vw;
         position: absolute;
@@ -102,23 +106,19 @@ body {
         margin-right: 20px;
       }
     
-      .PageHeader .ExternalLink {
+      .ExternalLink {
         display: none;
       }
-
-
-
-
-
       .MobileNavBar {
         width: 100vw;
         height: 70px;
         background-color: rgba(92, 123, 82, 1);
         position: absolute;
-        top: 8%;
+        top: 7%;
         display: flex;
         align-items: center;
         transition: all 0.3s ease-in;
+        z-index: 3;
       }
     
       .MobileNavBar ul {
@@ -140,16 +140,18 @@ body {
       }
     
       .MobileNavClosed {
-        transform: translateX(0);
+        transform: translateX(100%);
+       /* left: 100%; */
         opacity: 0.5;
       }
     
       .MobileNavOpen {
         transform: translateX(0);
+        /* left: 0; */
         opacity: 1;
       }
     
-      .shift-mobile-nav {
+      .PageHeader .shift-mobile-nav {
         margin-right: -30px;
         transform: translateX(50vw);
       }
