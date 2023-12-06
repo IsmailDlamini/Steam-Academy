@@ -7,11 +7,12 @@ import { useState } from "react";
 // import MobileNavIcon1 from "../components/MobileNavIcon1";
 // import MobileNavIcon2 from "../components/MobileNavIcon2";
 
-const Header = () => {
+const Header = (prop) => {
   const [navBarState, SetNaBarState] = useState(false);
 
   const ToggleMobileNavBar = () => {
     SetNaBarState(!navBarState);
+    console.log("hello")
   };
   return (
     <>
@@ -22,10 +23,10 @@ const Header = () => {
 
         <div className="NavBar">
           <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Services</li>
-            <li>Contact Us</li>
+            <li style={{ color: prop.color}}>Home</li>
+            <li style={{ color: prop.color}}>About Us</li>
+            <li style={{ color: prop.color}}>Services</li>
+            <li style={{ color: prop.color}}>Contact Us</li>
           </ul>
         </div>
 
@@ -61,14 +62,43 @@ const Header = () => {
         Logo={ExternalLogo}
       /> */}
 
+{/* <div className={`MobileNavBar ${
+          navBarState ? "MobileNavOpen" : "MobileNavClosed"
+        }`}>
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Services</li>
+          <li>Contact Us</li>
+          <li>
+            <img src={ExternalLogo} alt="sisters in science" />
+          </li>
+        </ul>
+      </div> */}
+
       </div>
 
-      <MobileNavBar
+      {/* <MobileNavBar
         ClassName={`MobileNavBar ${
           navBarState ? "MobileNavOpen" : "MobileNavClosed"
         }`}
         Logo={ExternalLogo}
-      />
+      /> */}
+
+
+<div className={`MobileNavBar ${
+          navBarState ? "MobileNavOpen" : "MobileNavClosed"
+        }`}>
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Services</li>
+          <li>Contact Us</li>
+          <li>
+            <img src={ExternalLogo} alt="sisters in science" />
+          </li>
+        </ul>
+      </div>
 
     
     </>

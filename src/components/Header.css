@@ -14,7 +14,6 @@ body {
   position: relative;
   margin: 0;
   line-height: normal;
-  overflow-y: hidden;
 }
 
 .PageHeader {
@@ -24,6 +23,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+    z-index: 5;
   }
   
   .PageHeader .NavBar ul {
@@ -140,7 +140,7 @@ body {
       }
     
       .MobileNavClosed {
-        transform: translateX(100%);
+        transform: translateX(0);
         opacity: 0.5;
       }
     

@@ -2,8 +2,6 @@ import "./LandingPage.css";
 import Header from "../components/Header";
 
 const LandingPage = () => {
-
-
   return (
     <>
       <div className="LandingPageContainer">
@@ -24,6 +22,8 @@ const LandingPage = () => {
               <button>Contact Us</button>
             </div>
           </div>
+
+          <div className="water-mark">Home</div>
         </div>
         <div className="ImageContainer">
           <div className="Image"></div>
@@ -31,7 +31,6 @@ const LandingPage = () => {
       </div>
 
       <Header />
-      <div className="water-mark">Home</div>
     </>
   );
 };

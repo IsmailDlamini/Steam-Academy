@@ -1,3 +1,5 @@
+import './MobileNavBar.css'
+
 const MobileNavBar = (prop) => {
   return (
     <>
