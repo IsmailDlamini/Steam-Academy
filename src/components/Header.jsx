@@ -4,7 +4,7 @@ import ExternalLogo from "../assets/ExternalLogo2.svg";
 import MobileNavIconOpen from "../assets/MobileNavIconOpen.svg";
 import MobileNavBar from "./MobileNavBar";
 import { useState } from "react";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 // import MobileNavIcon1 from "../components/MobileNavIcon1";
 // import MobileNavIcon2 from "../components/MobileNavIcon2";
 
@@ -24,10 +24,18 @@ const Header = (prop) => {
 
         <div className="NavBar">
           <ul>
-            <li style={{ color: prop.color }}>Home</li>
-            <li style={{ color: prop.color }}>About Us</li>
-            <li style={{ color: prop.color }}>Services</li>
-            <li style={{ color: prop.color }}>Contact Us</li>
+            <Link to={"/"} style={{ textDecoration: "none" }}>
+              <li style={{ color: prop.color }}>Home</li>
+            </Link>
+            <Link to={"/about"} style={{ textDecoration: "none" }}>
+              <li style={{ color: prop.color }}>About Us</li>
+            </Link>
+            <Link to={"/services"} style={{ textDecoration: "none" }}>
+              <li style={{ color: prop.color }}>Services</li>
+            </Link>
+            <Link to={"/contact"} style={{ textDecoration: "none" }}>
+              <li style={{ color: "rgba(245, 245, 245, 1)" }}>Contact Us</li>
+            </Link>
           </ul>
         </div>
 
@@ -55,14 +63,22 @@ const Header = (prop) => {
         }`}
       >
         <ul>
-          <Link to={'/'} style={{ textDecoration: 'none' }}><li>Home</li></Link> 
-          <Link to={'/about'} style={{ textDecoration: 'none' }}><li>About Us</li></Link>
-          <Link to={'/services'} style={{ textDecoration: 'none' }}><li>Services</li></Link>
-          <Link to={'/contact'} style={{ textDecoration: 'none' }}><li>Contact Us</li></Link>
-          <Link style={{ textDecoration: 'none' }}>
-          <li>
-            <img src={ExternalLogo} alt="sisters in science" />
-          </li>
+          <Link to={"/"} style={{ textDecoration: "none" }}>
+            <li>Home</li>
+          </Link>
+          <Link to={"/about"} style={{ textDecoration: "none" }}>
+            <li>About Us</li>
+          </Link>
+          <Link to={"/services"} style={{ textDecoration: "none" }}>
+            <li>Services</li>
+          </Link>
+          <Link to={"/contact"} style={{ textDecoration: "none" }}>
+            <li>Contact Us</li>
+          </Link>
+          <Link style={{ textDecoration: "none" }}>
+            <li>
+              <img src={ExternalLogo} alt="sisters in science" />
+            </li>
           </Link>
         </ul>
       </div>

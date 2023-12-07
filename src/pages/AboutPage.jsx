@@ -1,7 +1,8 @@
 import Header from "../components/Header";
 import "./AboutPage.css";
 import aboutPageImage from "../assets/aboutPageImage.svg";
-import projectImage from "../assets/projectImage.png";
+import projectImageGreen from "../assets/projectImageGreen.png";
+import projectImageGrey from "../assets/projectImageGrey.png";
 
 const AboutPage = () => {
   return (
@@ -56,7 +57,7 @@ const AboutPage = () => {
               <div className="project-title">2022 - Project Name</div>
               <div className="image-description-container">
                 <div className="project-image">
-                  <img src={projectImage} alt="project image" />
+                  <img src={projectImageGreen} alt="project image" />
                 </div>
                 <div className="project-description">
                   For this project, we managed to achieve remarkable milestones
@@ -71,7 +72,7 @@ const AboutPage = () => {
               <div className="project-title">2022 - Project Name</div>
               <div className="image-description-container">
                 <div className="project-image">
-                  <img src={projectImage} alt="project image" />
+                  <img src={projectImageGreen} alt="project image" />
                 </div>
                 <div className="project-description">
                   For this project, we managed to achieve remarkable milestones
@@ -91,7 +92,7 @@ const AboutPage = () => {
               <div className="project-title">2022 - Project Name</div>
               <div className="image-description-container">
                 <div className="project-image">
-                  <img src={projectImage} alt="project image" />
+                  <img src={projectImageGrey} alt="project image" />
                 </div>
                 <div className="project-description">
                   For this project, we managed to achieve remarkable milestones
@@ -106,7 +107,7 @@ const AboutPage = () => {
               <div className="project-title">2022 - Project Name</div>
               <div className="image-description-container">
                 <div className="project-image">
-                  <img src={projectImage} alt="project image" />
+                  <img src={projectImageGrey} alt="project image" />
                 </div>
                 <div className="project-description">
                   For this project, we managed to achieve remarkable milestones

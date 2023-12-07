@@ -114,11 +114,12 @@ body {
         height: 70px;
         background-color: rgba(92, 123, 82, 1);
         position: absolute;
-        top: 7%;
+        top: 70px;
         display: flex;
         align-items: center;
         transition: all 0.3s ease-in;
         z-index: 3;
+        overflow: hidden;
       }
     
       .MobileNavBar ul {
@@ -140,15 +141,19 @@ body {
       }
     
       .MobileNavClosed {
+        transform: scaleX(-1);
         transform: translateX(100%);
+        width: 0vw;
        /* left: 100%; */
         opacity: 0.5;
+        
       }
     
       .MobileNavOpen {
         transform: translateX(0);
         /* left: 0; */
         opacity: 1;
+        width: 100vw;
       }
     
       .PageHeader .shift-mobile-nav {

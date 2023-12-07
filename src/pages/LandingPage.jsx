@@ -1,5 +1,6 @@
 import "./LandingPage.css";
 import Header from "../components/Header";
+import siteVisual from '../assets/SiteVisual.png'
 
 const LandingPage = () => {
   return (
@@ -26,7 +27,9 @@ const LandingPage = () => {
           <div className="water-mark">Home</div>
         </div>
         <div className="ImageContainer">
-          <div className="Image"></div>
+          <div className="Image">
+            <img src={siteVisual} alt="" />
+          </div>
         </div>
       </div>
 

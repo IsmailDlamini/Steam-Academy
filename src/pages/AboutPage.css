@@ -15,16 +15,11 @@
   position: relative;
   overflow-x: hidden;
   white-space: nowrap;
-  overflow-x: hidden;
-  overflow-y: visible;
 }
 
 .about-page-container .first-half {
-  height: 100vh;
   width: 100%;
   display: flex;
-  overflow: hidden;
-  /* overflow: visible; */
   position: relative;
   white-space: nowrap;
   z-index: 2;
@@ -43,8 +38,7 @@
 }
 
 .about-page-container .first-half .information-container {
-  height: 100vh;
-  width: 60vw;
+  width: 60%;
   display: flex;
   justify-content: center;
   margin-top: 100px;
@@ -53,18 +47,17 @@
 }
 
 .about-page-container .first-half .image-container {
-  height: 100vh;
-  width: 40vw;
+  width: 40%;
   background-color: #5c7b52;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 0;
+  overflow: hidden;
 }
 
 .about-page-container .first-half .image-container img {
   width: 90%;
-  height: 90%;
 }
 
 .about-page-container .first-half .information-container .page-content {
@@ -102,7 +95,7 @@
   div {
   color: #1e211d;
   font-family: var(--font-raleway);
-  font-size: 18px;
+  font-size: 1.3vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -119,12 +112,12 @@
 
 .about-page-container .first-half .information-container .page-content button {
   border: none;
-  width: 115px;
+  width: 9vw;
   height: 41px;
   padding: 10px;
   border-radius: 6px;
   gap: 10px;
-  font-size: 1vw;
+  font-size: 1.2vw;
   font-family: var(--font-raleway);
 }
 
@@ -149,46 +142,39 @@
 }
 
 .about-page-container .second-half {
-  width: 98%;
+  width: 100%;
   display: flex;
-  height: fit-content;
-  position: relative;
-  overflow-x: hidden;
-  overflow-y: visible;
 }
 
 .about-page-container .second-half .right {
   width: 50%;
-  height: fit-content;
   padding-top: 50px;
-  padding-bottom: 130px;
+  padding-bottom: 50px;
 }
 
 .about-page-container .second-half .left {
   background-color: #5c7b52;
   width: 50%;
-  height: fit-content;
   padding-top: 50px;
-  padding-bottom: 130px;
+  padding-bottom: 50px;
 }
 
 .about-page-container .first-half .water-mark-2 {
   color: rgba(187, 199, 183, 0.3);
   font-family: var(--font-raleway);
-  font-size: 13vw;
+  font-size: 18vw;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   position: absolute;
-  top: 75%;
-  left: 15%;
+  top: 68%;
+  left: 3%;
 }
 
 .about-page-container .second-half .project-container {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   margin-top: 30px;
-  height: fit-content;
 }
 
 .about-page-container .second-half .project-container .project-title {
@@ -206,13 +192,12 @@
   .image-description-container {
   display: flex;
   white-space: normal;
-  width: 80%;
+  width: 90%;
 }
 .about-page-container
   .second-half
   .project-container
   .image-description-container {
-  height: 100%;
   margin-top: 10px;
 }
 
@@ -236,19 +221,14 @@
   .project-container
   .image-description-container
   .project-description {
-  margin-left: 10px;
   color: #1e211d;
-  font-family: var(--font-raleway);
-  font-size: 1.3vw;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+  
 }
 
 .about-page-container .second-half .right .project-container .project-title {
   color: #1e211d;
   font-family: var(--font-raleway);
-  font-size: 54.16px;
+  font-size: 3.5vw;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -264,19 +244,16 @@
     overflow-x: hidden;
   }
   .about-page-container .first-half {
-    height: fit-content;
     width: 100vw;
     display: flex;
     flex-direction: column;
   }
 
   .about-page-container .first-half .information-container {
-    height: 100%;
     width: 100vw;
   }
 
   .about-page-container .first-half .information-container .page-content {
-    height: fit-content;
     width: 90vw;
     white-space: normal;
   }
@@ -339,21 +316,16 @@
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
-    position: relative;
-    overflow-x: hidden;
-    overflow-y: visible;
   }
 
   .about-page-container .second-half .right {
     width: 100%;
-    height: fit-content;
     padding-top: 50px;
     padding-bottom: 50px;
   }
 
   .about-page-container .second-half .left {
     width: 100%;
-    height: fit-content;
     padding-top: 30px;
     padding-bottom: 50px;
   }
@@ -368,7 +340,6 @@
     width: 90%;
     margin: 0 auto;
     margin-top: 30px;
-    height: fit-content;
   }
 
   .about-page-container .second-half .project-container .project-title {
@@ -427,7 +398,6 @@
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
 
     .about-page-container .first-half {
-        height: fit-content;
         width: 100vw;
         display: flex;
         flex-direction: column;
@@ -439,7 +409,6 @@
       }
     
       .about-page-container .first-half .information-container .page-content {
-        height: fit-content;
         width: 90vw;
         white-space: normal;
       }
@@ -504,22 +473,17 @@
         width: 100%;
         display: flex;
         flex-direction: column-reverse;
-        position: relative;
-        overflow-x: hidden;
-        overflow-y: visible;
-        /* z-index: 3; */
+        
       }
     
       .about-page-container .second-half .right {
         width: 100%;
-        height: fit-content;
         padding-top: 180px;
         padding-bottom: 50px;
       }
     
       .about-page-container .second-half .left {
         width: 100%;
-        height: fit-content;
         padding-top: 30px;
         padding-bottom: 50px;
       }
@@ -535,7 +499,7 @@
         width: 80%;
         margin: 0 auto;
         margin-top: 50px;
-        height: fit-content;
+      
       }
     
       .about-page-container .second-half .project-container .project-title {
