@@ -10,6 +10,23 @@
   padding: 0;
 }
 
+body{
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(49, 81, 39); 
+  border-radius: 5px; 
+}
+
+body::-webkit-scrollbar-track {
+  background-color: rgba(187, 199, 183, 0.1);
+}
+
 .contact-page-container {
   width: 100vw;
   /* height: 100vh; */
@@ -58,7 +75,7 @@
   display: flex;
   justify-content: center;
   white-space: wrap;
-  /* padding-bottom: 40px; */
+  padding-bottom: 40px;
 }
 
 .contact-page-container .contact-section .image {
@@ -94,6 +111,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  white-space: normal;
   z-index: 2;
 }
 
