@@ -5,11 +5,6 @@
   --font-raleway: Raleway;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .about-page-container {
   width: 100vw;
   position: relative;

@@ -5,18 +5,6 @@
   --font-raleway: Raleway;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  line-height: normal;
-  overflow-x: hidden;
-}
-
 .LandingPageContainer {
   width: 100vw;
   display: flex;
@@ -123,12 +111,7 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  /* bottom: 5%;
-  left: 10%;
-  height: fit-content; */
   z-index: 0;
-  /* display: none; */
-
 }
 
 @media screen and (max-width: 600px) {
@@ -167,8 +150,6 @@ body {
     max-height: 100%;
     min-height: 100%;
     width: 50%;
-    /* background-image: url("C:\Users\Ismail\Desktop\ClientProject1\client\src\assets\SiteVisualMobile.svg");
-    background-size: cover; */
     margin: 0 auto;
     transform: translateY(-60px);
   }
@@ -284,8 +265,6 @@ body {
   .LandingPageContainer .ImageContainer .Image {
     height: 100%;
     width: 70%;
-    /* background-image: url("C:\Users\Ismail\Desktop\ClientProject1\client\src\assets\SiteVisualTablet.svg");
-    background-size: cover; */
     margin: 0 auto;
   }
 

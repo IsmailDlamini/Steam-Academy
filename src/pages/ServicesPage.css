@@ -5,11 +5,6 @@
   --font-raleway: Raleway;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .service-page-container {
   width: 100vw;
   height: fit-content;
@@ -156,8 +151,8 @@
 }
 
 .service-page-container .Left .content img {
-    width: 100%;
-  }
+  width: 100%;
+}
 
 @media screen and (max-width: 600px) {
   .service-page-container {
@@ -260,101 +255,99 @@
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
-    .service-page-container {
-        width: 100vw;
-        height: fit-content;
-        display: flex;
-        position: relative;
-        flex-direction: column;
-        white-space: nowrap;
-        overflow-x: hidden;
-      }
-    
-      .service-page-container .Left {
-        width: 100vw;
-        height: fit-content;
-        display: flex;
-        justify-content: center;
-        padding-bottom: 20px;
-        white-space: normal;
-      }
-    
-      .service-page-container .Right {
-        width: 100vw;
-        height: fit-content;
-        padding-bottom: 30px;
-        white-space: normal;
-      }
-    
-      .service-page-container .Left .content {
-        margin-top: 80px;
-        width: 85%;
-      }
-    
-      .service-page-container .Left .content div:nth-child(1) {
-        font-size: 8vw;
-      }
-    
-      .service-page-container .Left .content div:nth-child(2) div {
-        font-size: 3.5vw;
-      }
-    
-      .service-page-container
-        .Left
-        .content
-        div:nth-child(2)
-        div:nth-child(1)
-        span {
-        font-size: 5.5vw;
-      }
-    
-      .service-page-container .Left .content div:nth-child(2) span {
-        font-size: 4vw;
-      }
-    
-      .service-page-container .Left .content button {
-        display: flex;
-        padding: 10px;
-    
-        font-size: 4vw;
-      }
-    
-      .service-page-container .Right .content {
-        margin-top: 50px;
-        width: 90%;
-      }
-    
-      .service-page-container .Right .content div:nth-child(1) {
-        font-size: 7vw;
-      }
-    
-      .service-page-container .Right .content div:nth-child(2) div {
-        font-size: 3.5vw;
-      }
-    
-      .service-page-container .Right .content div:nth-child(2) div span {
-        font-size: 3.5vw;
-      }
-    
-      .service-page-container .Right .content button {
-        display: flex;
-        padding: 10px;
-        font-size: 4vw;
-        margin-top: 20px;
-      }
-    
-      .service-page-container .water-mark-1 {
-        font-size: 28vw;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        left: -8%;
-        top: 1%;
-      }
-    
-      .service-page-container .Left .content img {
-        width: 100%;
-      }
+  .service-page-container {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    white-space: nowrap;
+    overflow-x: hidden;
+  }
 
+  .service-page-container .Left {
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    white-space: normal;
+  }
 
+  .service-page-container .Right {
+    width: 100vw;
+    height: fit-content;
+    padding-bottom: 30px;
+    white-space: normal;
+  }
+
+  .service-page-container .Left .content {
+    margin-top: 80px;
+    width: 85%;
+  }
+
+  .service-page-container .Left .content div:nth-child(1) {
+    font-size: 8vw;
+  }
+
+  .service-page-container .Left .content div:nth-child(2) div {
+    font-size: 3.5vw;
+  }
+
+  .service-page-container
+    .Left
+    .content
+    div:nth-child(2)
+    div:nth-child(1)
+    span {
+    font-size: 5.5vw;
+  }
+
+  .service-page-container .Left .content div:nth-child(2) span {
+    font-size: 4vw;
+  }
+
+  .service-page-container .Left .content button {
+    display: flex;
+    padding: 10px;
+
+    font-size: 4vw;
+  }
+
+  .service-page-container .Right .content {
+    margin-top: 50px;
+    width: 90%;
+  }
+
+  .service-page-container .Right .content div:nth-child(1) {
+    font-size: 7vw;
+  }
+
+  .service-page-container .Right .content div:nth-child(2) div {
+    font-size: 3.5vw;
+  }
+
+  .service-page-container .Right .content div:nth-child(2) div span {
+    font-size: 3.5vw;
+  }
+
+  .service-page-container .Right .content button {
+    display: flex;
+    padding: 10px;
+    font-size: 4vw;
+    margin-top: 20px;
+  }
+
+  .service-page-container .water-mark-1 {
+    font-size: 28vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    left: -8%;
+    top: 1%;
+  }
+
+  .service-page-container .Left .content img {
+    width: 100%;
+  }
 }

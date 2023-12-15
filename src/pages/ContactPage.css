@@ -5,28 +5,6 @@
   --font-raleway: Raleway;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body{
-  overflow-x: hidden;
-}
-
-body::-webkit-scrollbar {
-  width: 10px;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: rgb(49, 81, 39); 
-  border-radius: 5px; 
-}
-
-body::-webkit-scrollbar-track {
-  background-color: rgba(187, 199, 183, 0.1);
-}
-
 .contact-page-container {
   width: 100vw;
   display: flex;
