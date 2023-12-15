@@ -1,6 +1,8 @@
 import "./LandingPage.css";
 import Header from "../components/Header";
-import siteVisual from '../assets/SiteVisual.png'
+import siteVisual from "../assets/SiteVisual.png";
+import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 const LandingPage = () => {
   return (
@@ -19,8 +21,26 @@ const LandingPage = () => {
             </div>
 
             <div className="buttons">
-              <button>Learn More</button>
-              <button>Contact Us</button>
+              <button>
+                <Link
+                  to={"/about"}
+                  style={{ textDecoration: "none", color: "white" }}
+                >
+                  Learn More{" "}
+                </Link>
+              </button>
+
+              <button>
+                <Link
+                  to={"/contact"}
+                  style={{
+                    textDecoration: "none",
+                    color: "rgba(92, 123, 82, 1)",
+                  }}
+                >
+                  Contact Us
+                </Link>
+              </button>
             </div>
           </div>
 
@@ -34,6 +54,7 @@ const LandingPage = () => {
       </div>
 
       <Header />
+      <Footer />
     </>
   );
 };

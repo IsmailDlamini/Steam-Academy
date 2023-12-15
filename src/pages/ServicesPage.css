@@ -91,6 +91,7 @@
   margin-top: 20px;
   margin-bottom: 20px;
   background: transparent;
+  cursor: pointer;
 }
 
 .service-page-container .Right .content {
@@ -139,6 +140,7 @@
   line-height: normal;
   background: transparent;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .service-page-container .water-mark-1 {

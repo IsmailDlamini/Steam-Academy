@@ -1,8 +1,8 @@
 import Header from "../components/Header";
 import "./ContactPage.css";
-import contactImageDesktop from "../assets/contactImage.svg";
 import linkedin from "../assets/linkedin.svg";
 import facebook from "../assets/facebook.svg";
+import Footer from "../components/Footer";
 
 const ContactPage = () => {
   return (
@@ -10,13 +10,10 @@ const ContactPage = () => {
       <div className="contact-page-container">
         <div className="social-media-icons">
           <div>
-            <img src={linkedin} alt="" />
-
-            <img src={facebook} alt="" />
-
-            <img src={linkedin} alt="" />
-
-            <img src={facebook} alt="" />
+            <img src={linkedin} alt="linkedin" />
+            <img src={facebook} alt="facebook" />
+            <img src={linkedin} alt="linkedin" />
+            <img src={facebook} alt="facebook" />
           </div>
         </div>
 
@@ -25,22 +22,24 @@ const ContactPage = () => {
             <div>
               Please fill in this form and we will get back to you!
               <form action="" method="post">
-                <label htmlFor="">Name</label>
+                <label htmlFor="name">Name</label>
                 <input
+                  name="name"
                   type="text"
                   placeholder="Please enter your name and surname"
                 />
 
-                <label htmlFor="">Email</label>
+                <label htmlFor="email">Email</label>
                 <input
+                  name="email"
                   type="email"
                   placeholder="Please enter your email address"
                 />
 
-                <label htmlFor="">Enquiry</label>
+                <label htmlFor="enquiry">Enquiry</label>
                 <textarea
-                  name=""
-                  id=""
+                  name="enquiry"
+                  id="enquiry"
                   cols="30"
                   rows="10"
                   placeholder="Please enter any questions you have"
@@ -50,16 +49,13 @@ const ContactPage = () => {
               </form>
             </div>
           </div>
-          <div className="image">
-            {/* <img src={contactImageDesktop} alt="" /> */}
-          </div>
+          <div className="image"></div>
         </div>
 
         <div className="water-mark-1">Contact Us</div>
       </div>
-      <Header 
-        color='rgba(245, 245, 245, 1)'
-      />
+      <Header color="rgba(245, 245, 245, 1)" />
+      <Footer />
     </>
   );
 };

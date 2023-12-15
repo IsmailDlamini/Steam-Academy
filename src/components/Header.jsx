@@ -2,24 +2,23 @@ import "./Header.css";
 import SiteLogo from "../assets/SiteLogo2.svg";
 import ExternalLogo from "../assets/ExternalLogo2.svg";
 import MobileNavIconOpen from "../assets/MobileNavIconOpen.svg";
-import MobileNavBar from "./MobileNavBar";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-// import MobileNavIcon1 from "../components/MobileNavIcon1";
-// import MobileNavIcon2 from "../components/MobileNavIcon2";
+import MobileNavIconClose from "../assets/MobileNavIconClose.png";
 
 const Header = (prop) => {
   const [navBarState, SetNaBarState] = useState(false);
 
   const ToggleMobileNavBar = () => {
     SetNaBarState(!navBarState);
-    console.log(navBarState);
   };
   return (
     <>
       <div className="PageHeader">
         <div className="Logo">
-          <img src={SiteLogo} className="SiteLogo" alt="SiteLogo" />
+          <Link to={"/"} style={{ textDecoration: "none" }}>
+            <img src={SiteLogo} className="SiteLogo" alt="SiteLogo" />
+          </Link>
         </div>
 
         <div className="NavBar">
@@ -49,7 +48,7 @@ const Header = (prop) => {
 
         <div className="MobileNav">
           <img
-            src={MobileNavIconOpen}
+            src={navBarState ? MobileNavIconClose : MobileNavIconOpen}
             className="icon"
             onClick={ToggleMobileNavBar}
             alt=""

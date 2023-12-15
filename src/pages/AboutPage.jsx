@@ -1,8 +1,9 @@
 import Header from "../components/Header";
 import "./AboutPage.css";
 import aboutPageImage from "../assets/aboutPageImage.svg";
-import projectImageGreen from "../assets/projectImageGreen.png";
-import projectImageGrey from "../assets/projectImageGrey.png";
+import Footer from "../components/Footer";
+import projectImage from "../assets/projectImage.png";
+import { Link } from "react-router-dom";
 
 const AboutPage = () => {
   return (
@@ -24,22 +25,39 @@ const AboutPage = () => {
                 </div>
 
                 <div>
-                  Our mission extends beyond transforming e-waste; it's about
+                  Our mission extends beyond transforming e-waste; it{`'`}s about
                   uplifting communities in Mpumalanga by equipping them with
                   valuable tech skills.
                 </div>
 
                 <div>
-                  Through our initiatives, we're not just repurposing
-                  electronics; we're creating opportunities, bolstering the
+                  Through our initiatives, we{`'`}re not just repurposing
+                  electronics; we{`'`}re creating opportunities, bolstering the
                   local economy, and paving the way for a brighter, more skilled
                   workforce in the heart of Mpumalanga.
                 </div>
               </div>
 
               <div className="buttons">
-                <button>Learn More</button>
-                <button>Contact Us</button>
+                <button>
+                  <Link
+                    to={"/about"}
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
+                    Learn More{" "}
+                  </Link>
+                </button>
+                <button>
+                  <Link
+                    to={"/contact"}
+                    style={{
+                      textDecoration: "none",
+                      color: "rgba(92, 123, 82, 1)",
+                    }}
+                  >
+                    Contact Us{" "}
+                  </Link>
+                </button>
               </div>
             </div>
           </div>
@@ -57,7 +75,7 @@ const AboutPage = () => {
               <div className="project-title">2022 - Project Name</div>
               <div className="image-description-container">
                 <div className="project-image">
-                  <img src={projectImageGreen} alt="project image" />
+                  <img src={projectImage} alt="project image" />
                 </div>
                 <div className="project-description">
                   For this project, we managed to achieve remarkable milestones
@@ -66,13 +84,12 @@ const AboutPage = () => {
                 </div>
               </div>
             </div>
-
 
             <div className="project-container">
               <div className="project-title">2022 - Project Name</div>
               <div className="image-description-container">
                 <div className="project-image">
-                  <img src={projectImageGreen} alt="project image" />
+                  <img src={projectImage} alt="project image" />
                 </div>
                 <div className="project-description">
                   For this project, we managed to achieve remarkable milestones
@@ -81,18 +98,14 @@ const AboutPage = () => {
                 </div>
               </div>
             </div>
-
-
-
           </div>
 
           <div className="right">
-
-          <div className="project-container">
+            <div className="project-container">
               <div className="project-title">2022 - Project Name</div>
               <div className="image-description-container">
                 <div className="project-image">
-                  <img src={projectImageGrey} alt="project image" />
+                  <img src={projectImage} alt="project image" />
                 </div>
                 <div className="project-description">
                   For this project, we managed to achieve remarkable milestones
@@ -101,13 +114,12 @@ const AboutPage = () => {
                 </div>
               </div>
             </div>
-
 
             <div className="project-container">
               <div className="project-title">2022 - Project Name</div>
               <div className="image-description-container">
                 <div className="project-image">
-                  <img src={projectImageGrey} alt="project image" />
+                  <img src={projectImage} alt="project image" />
                 </div>
                 <div className="project-description">
                   For this project, we managed to achieve remarkable milestones
@@ -116,12 +128,12 @@ const AboutPage = () => {
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
 
       <Header />
+      <Footer />
     </>
   );
 };

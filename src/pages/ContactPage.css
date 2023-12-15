@@ -29,7 +29,6 @@ body::-webkit-scrollbar-track {
 
 .contact-page-container {
   width: 100vw;
-  /* height: 100vh; */
   display: flex;
   position: relative;
   white-space: nowrap;
@@ -181,14 +180,14 @@ body::-webkit-scrollbar-track {
 
 .contact-page-container .contact-section .form-container form button {
   display: flex;
-  padding: 10px;
+  padding: 10px 20px;
   justify-content: center;
   align-items: center;
   gap: 10px;
   border-radius: 6px;
   background: #1d4a0e;
   font-family: var(--font-raleway);
-  width: 10vw;
+  width: fit-content;
   margin-left: 40px;
   margin-top: 20px;
   border: none;
@@ -197,6 +196,7 @@ body::-webkit-scrollbar-track {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  cursor: pointer;
 }
 
 .contact-page-container .water-mark-1 {

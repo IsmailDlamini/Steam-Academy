@@ -112,13 +112,13 @@
 
 .about-page-container .first-half .information-container .page-content button {
   border: none;
-  width: 9vw;
-  height: 41px;
-  padding: 10px;
+  
+  padding: 10px 20px;
   border-radius: 6px;
   gap: 10px;
   font-size: 1.2vw;
   font-family: var(--font-raleway);
+  cursor: pointer;
 }
 
 .about-page-container
@@ -299,11 +299,13 @@
     width: 100vw;
     margin-top: 100px;
     overflow: hidden;
+    
   }
 
   .about-page-container .first-half .image-container img {
     width: 100%;
-    height: 130%;
+    height: 150%;
+  
   }
 
   .about-page-container .first-half .water-mark-1 {
