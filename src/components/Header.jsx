@@ -35,6 +35,9 @@ const Header = (prop) => {
             <Link to={"/contact"} style={{ textDecoration: "none" }}>
               <li style={{ color: "rgba(245, 245, 245, 1)" }}>Contact Us</li>
             </Link>
+            <Link to={"/gallery"} style={{ textDecoration: "none" }}>
+              <li style={{ color: "rgba(245, 245, 245, 1)" }}>Gallery</li>
+            </Link>
           </ul>
         </div>
 

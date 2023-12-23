@@ -36,12 +36,17 @@
 .LandingPageContainer .ImageContainer .Image {
   overflow: hidden;
   flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .LandingPageContainer .ImageContainer .Image img{
-  width: 90%;
-  height: 100%;
-
+  width: 35%;
+  /* transform: translate(100px, 300px); */
+  transform: translateX(40px);
+  position: absolute;
+  bottom: -5%;
 }
 
 .LandingPageContainer .InformationContainer .SiteInfo {
@@ -151,8 +156,18 @@
     min-height: 100%;
     width: 50%;
     margin: 0 auto;
-    transform: translateY(-60px);
+    transform: translateY(0px);
+    display: flex;
+    justify-content: center;
   }
+
+  .LandingPageContainer .ImageContainer .Image img{
+    width: 35%;
+    transform: translate(20px, 60px);
+    position: initial;
+
+  }
+  
 
   .LandingPageContainer .InformationContainer .SiteInfo {
     width: 90vw;
@@ -235,7 +250,7 @@
 
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
   .LandingPageContainer {
     width: 100vw;
     display: flex;
@@ -266,6 +281,13 @@
     height: 100%;
     width: 70%;
     margin: 0 auto;
+  }
+
+  .LandingPageContainer .ImageContainer .Image img{
+    width: 70%;
+    transform: translate(20px, 60px);
+    position: initial;
+
   }
 
   
