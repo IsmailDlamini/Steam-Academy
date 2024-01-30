@@ -1,14 +1,57 @@
-
-import './GalleryPage.css'
+import "./GalleryPage.css";
 import linkedin from "../assets/linkedin.svg";
 import facebook from "../assets/facebook.svg";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import slide_show_image_1 from "../assets/slide-show-image-1.svg";
+import extra_image_1 from "../assets/extra-image-1.svg";
+import extra_image_3 from "../assets/extra-image-3.svg";
+import extra_image_2 from "../assets/slide-show-image-2.svg";
+import test_image_1 from "../assets/test-image-1.svg";
+import test_image_2 from "../assets/test-image-2.svg";
+import test_image_3 from "../assets/test-image-3.svg";
+import { useEffect } from "react";
+import { useState } from "react";
 
 const GalleryPage = () => {
+  const slides = [
+    slide_show_image_1,
+    extra_image_1,
+    extra_image_2,
+    test_image_1,
+    test_image_2,
+    test_image_3,
+  ];
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+    }, 6000);
+
+    return () => clearInterval(intervalId);
+  }, [slides.length]);
+
+  const slide_nav = slides.map((slide, index) => {
+    return (
+      <li
+        className={`slide ${currentSlide === index ? "active-nav" : ""}`}
+        key={index}
+        onClick={() => {
+          HandleSlideNav(index);
+        }}
+      ></li>
+    );
+  });
+
+  const HandleSlideNav = (number) => {
+    setCurrentSlide(number);
+  };
+
   return (
     <>
-<div className="contact-page-container">
+      <div className="gallery-page-container">
         <div className="social-media-icons">
           <div>
             <img src={linkedin} alt="linkedin" />
@@ -17,48 +60,54 @@ const GalleryPage = () => {
             <img src={facebook} alt="facebook" />
           </div>
         </div>
+        <div className="last-two">
+          <div className="green-background"></div>
 
-        <div className="contact-section">
-          <div className="form-container">
-            <div>
-              Please fill in this form and we will get back to you!
-              <form action="" method="post">
-                <label htmlFor="name">Name</label>
-                <input
-                  name="name"
-                  type="text"
-                  placeholder="Please enter your name and surname"
-                />
-
-                <label htmlFor="email">Email</label>
-                <input
-                  name="email"
-                  type="email"
-                  placeholder="Please enter your email address"
-                />
-
-                <label htmlFor="enquiry">Enquiry</label>
-                <textarea
-                  name="enquiry"
-                  id="enquiry"
-                  cols="30"
-                  rows="10"
-                  placeholder="Please enter any questions you have"
-                ></textarea>
-
-                <button>Send Enquiry</button>
-              </form>
-            </div>
-          </div>
-          <div className="image"></div>
+          <div className="image-background"></div>
         </div>
 
-        <div className="water-mark-1">Contact Us</div>
+        <div className="water-mark-1">Gallery</div>
+
+        <div className="image-slide-show-container">
+          <div className="slide-show-image">
+            <div className="image-container">
+              <img src={slides[currentSlide]} alt="slide-show-image-1" />
+            </div>
+            <div className="slide-nav">
+              <ul>{slide_nav}</ul>
+            </div>
+          </div>
+
+          <div className="extra-images first">
+            <div className="extra-image">
+              <img src={extra_image_1} alt="extra-image-1" />
+            </div>
+            <div className="extra-image">
+              <img src={extra_image_2} alt="extra-image-2" />
+            </div>
+            <div className="extra-image">
+              <img src={slide_show_image_1} alt="extra-image-3" />
+            </div>
+          </div>
+
+          <div className="extra-images second">
+            <div className="extra-image">
+              <img src={slide_show_image_1} alt="extra-image-3" />
+            </div>
+            <div className="extra-image">
+              <img src={extra_image_1} alt="extra-image-1" />
+            </div>
+
+            <div className="extra-image">
+              <img src={extra_image_2} alt="extra-image-2" />
+            </div>
+          </div>
+        </div>
       </div>
       <Header color="rgba(245, 245, 245, 1)" />
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default GalleryPage
+export default GalleryPage;

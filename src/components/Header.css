@@ -127,6 +127,7 @@ body {
         list-style: none;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
       }
     
       .MobileNavBar ul li {

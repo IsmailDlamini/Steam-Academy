@@ -1,6 +1,6 @@
 import "./LandingPage.css";
 import Header from "../components/Header";
-import siteVisual from "../assets/SiteVisual3.svg";
+import siteVisual from "../assets/siteVisual4.png";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 

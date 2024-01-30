@@ -2,8 +2,13 @@ import Header from "../components/Header";
 import "./AboutPage.css";
 import aboutPageImage from "../assets/aboutPageImage.svg";
 import Footer from "../components/Footer";
-import projectImage from "../assets/projectImage.png";
 import { Link } from "react-router-dom";
+import r from '../assets/r.png'
+import i from '../assets/i.png'
+import p from '../assets/p.png'
+import e from '../assets/e.png'
+import s from '../assets/s.png'
+import a from '../assets/a.png'
 
 const AboutPage = () => {
   return (
@@ -66,68 +71,91 @@ const AboutPage = () => {
           </div>
 
           <div className="water-mark-1">About Us</div>
-          <div className="water-mark-2">Projects</div>
+          <div className="water-mark-2">Values</div>
         </div>
 
         <div className="second-half">
           <div className="left">
             <div className="project-container">
-              <div className="project-title">2022 - Project Name</div>
+              <div className="project-title">Resilience</div>
               <div className="image-description-container">
                 <div className="project-image">
-                  <img src={projectImage} alt="project image" />
+                  <img src={r} alt="project image" />
                 </div>
                 <div className="project-description">
-                  For this project, we managed to achieve remarkable milestones
-                  by harnessing innovative technologies and fostering
-                  collaborative partnerships.
+                Develop leadership that is resilient and self-aware.
                 </div>
               </div>
             </div>
 
             <div className="project-container">
-              <div className="project-title">2022 - Project Name</div>
+              <div className="project-title">Innovate</div>
               <div className="image-description-container">
                 <div className="project-image">
-                  <img src={projectImage} alt="project image" />
+                  <img src={i} alt="project image" />
                 </div>
                 <div className="project-description">
-                  For this project, we managed to achieve remarkable milestones
-                  by harnessing innovative technologies and fostering
-                  collaborative partnerships.
+                Create a space where children can be curious, creative, and innovative.
+
                 </div>
               </div>
             </div>
+
+
+            <div className="project-container">
+              <div className="project-title">Partnership</div>
+              <div className="image-description-container">
+                <div className="project-image">
+                  <img src={p} alt="project image" />
+                </div>
+                <div className="project-description">
+                Promote collaboration, diversity, and respect.
+                </div>
+              </div>
+            </div>
+
+
           </div>
 
           <div className="right">
             <div className="project-container">
-              <div className="project-title">2022 - Project Name</div>
+              <div className="project-title">Excellence</div>
               <div className="image-description-container">
                 <div className="project-image">
-                  <img src={projectImage} alt="project image" />
+                  <img src={e} alt="project image" />
                 </div>
                 <div className="project-description">
-                  For this project, we managed to achieve remarkable milestones
-                  by harnessing innovative technologies and fostering
-                  collaborative partnerships.
+                Nurture a culture of excellence and continuous improvement.
                 </div>
               </div>
             </div>
 
             <div className="project-container">
-              <div className="project-title">2022 - Project Name</div>
+              <div className="project-title">Sustainable</div>
               <div className="image-description-container">
                 <div className="project-image">
-                  <img src={projectImage} alt="project image" />
+                  <img src={s} alt="project image" />
                 </div>
                 <div className="project-description">
-                  For this project, we managed to achieve remarkable milestones
-                  by harnessing innovative technologies and fostering
-                  collaborative partnerships.
+                Apply sustainable solutions in our innovative projects.
                 </div>
               </div>
             </div>
+
+
+            <div className="project-container">
+              <div className="project-title">Autonomy</div>
+              <div className="image-description-container">
+                <div className="project-image">
+                  <img src={a} alt="project image" />
+                </div>
+                <div className="project-description">
+                Develop learners that are independent yet aware of the VUCA world.
+                </div>
+              </div>
+            </div>
+
+
           </div>
         </div>
       </div>
