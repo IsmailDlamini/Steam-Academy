@@ -20,13 +20,14 @@ const ContactPage = () => {
         <div className="contact-section">
           <div className="form-container">
             <div>
-              Please fill in this form and we will get back to you!
+             <div className="contact-prompt">Please fill in this form and we will get back to you!</div> 
               <form action="" method="post">
                 <label htmlFor="name">Name</label>
                 <input
                   name="name"
                   type="text"
                   placeholder="Please enter your name and surname"
+                  required
                 />
 
                 <label htmlFor="email">Email</label>
@@ -34,6 +35,7 @@ const ContactPage = () => {
                   name="email"
                   type="email"
                   placeholder="Please enter your email address"
+                  required
                 />
 
                 <label htmlFor="enquiry">Enquiry</label>
@@ -43,6 +45,7 @@ const ContactPage = () => {
                   cols="30"
                   rows="10"
                   placeholder="Please enter any questions you have"
+                  required
                 ></textarea>
 
                 <button>Send Enquiry</button>

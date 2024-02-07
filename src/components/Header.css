@@ -111,7 +111,7 @@ body {
       }
       .MobileNavBar {
         width: 100vw;
-        height: 70px;
+        height:fit-content;
         background-color: rgba(92, 123, 82, 1);
         position: absolute;
         top: 70px;
@@ -123,11 +123,17 @@ body {
       }
     
       .MobileNavBar ul {
+        height: fit-content;
         display: flex;
         list-style: none;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
+        padding: 10px 0;
+      }
+
+      .MobileNavBar ul img{
+        margin-top: 10px;
       }
     
       .MobileNavBar ul li {

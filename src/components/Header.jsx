@@ -65,20 +65,20 @@ const Header = (prop) => {
         }`}
       >
         <ul>
-          <Link to={"/"} style={{ textDecoration: "none" }}>
-            <li>Home</li>
+          <Link to={"/"} style={{ textDecoration: "none" }} >
+            <li onClick={ToggleMobileNavBar}>Home</li>
           </Link>
           <Link to={"/about"} style={{ textDecoration: "none" }}>
-            <li>About Us</li>
+            <li onClick={ToggleMobileNavBar}>About Us</li>
           </Link>
           <Link to={"/services"} style={{ textDecoration: "none" }}>
-            <li>Services</li>
+            <li onClick={ToggleMobileNavBar}>Services</li>
           </Link>
           <Link to={"/contact"} style={{ textDecoration: "none" }}>
-            <li>Contact Us</li>
+            <li onClick={ToggleMobileNavBar}>Contact Us</li>
           </Link>
           <Link to={"/gallery"} style={{ textDecoration: "none" }}>
-            <li>Gallery</li>
+            <li onClick={ToggleMobileNavBar}>Gallery</li>
           </Link>
           <Link style={{ textDecoration: "none" }}>
             <li>

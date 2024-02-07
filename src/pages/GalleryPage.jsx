@@ -5,7 +5,6 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import slide_show_image_1 from "../assets/slide-show-image-1.svg";
 import extra_image_1 from "../assets/extra-image-1.svg";
-import extra_image_3 from "../assets/extra-image-3.svg";
 import extra_image_2 from "../assets/slide-show-image-2.svg";
 import test_image_1 from "../assets/test-image-1.svg";
 import test_image_2 from "../assets/test-image-2.svg";

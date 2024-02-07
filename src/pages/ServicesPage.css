@@ -52,13 +52,21 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-top: 15px;
+  margin-top: 0;
 }
 
 .service-page-container .Left .content div:nth-child(2) div:nth-child(1) span {
-  color: #1d4a0e;
   font-size: 1.7vw;
   font-weight: 700;
+}
+
+.service-page-container .Left .content .paragraphs .paragraph .title{
+  font-weight: 700;
+  margin-top: 25px;
+}
+
+.service-page-container .Left .content .paragraphs .paragraph .text{
+  margin-top: 0;
 }
 
 .service-page-container .Left .content div:nth-child(2) span {
@@ -90,7 +98,7 @@
 }
 
 .service-page-container .Right .content {
-  margin-top: 200px;
+  margin-top: 14vw;
   width: 85%;
 }
 
@@ -111,7 +119,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 .service-page-container .Right .content div:nth-child(2) div span {
@@ -150,8 +158,9 @@
   top: -2%;
 }
 
-.service-page-container .Left .content img {
+.service-page-container .Right .content img {
   width: 100%;
+  margin: 45px 0;
 }
 
 @media screen and (max-width: 600px) {
@@ -185,7 +194,7 @@
 
   .service-page-container .Left .content {
     margin-top: 80px;
-    width: 85%;
+    width: 90%;
   }
 
   .service-page-container .Left .content div:nth-child(1) {
@@ -194,6 +203,7 @@
 
   .service-page-container .Left .content div:nth-child(2) div {
     font-size: 3.5vw;
+    text-align: left;
   }
 
   .service-page-container
@@ -211,7 +221,7 @@
 
   .service-page-container .Left .content button {
     display: flex;
-    padding: 10px;
+    padding: 7px 15px;
 
     font-size: 4vw;
   }
@@ -235,7 +245,7 @@
 
   .service-page-container .Right .content button {
     display: flex;
-    padding: 10px;
+    padding: 7px 15px;
     font-size: 4vw;
     margin-top: 20px;
   }
@@ -249,8 +259,9 @@
     top: 1%;
   }
 
-  .service-page-container .Left .content img {
+  .service-page-container .Right .content img {
     width: 100%;
+    margin-bottom: 0;
   }
 }
 
@@ -347,7 +358,8 @@
     top: 1%;
   }
 
-  .service-page-container .Left .content img {
+  .service-page-container .Right .content img {
     width: 100%;
+    margin-bottom: 0;
   }
 }
