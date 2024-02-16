@@ -19,7 +19,7 @@ const ContactPage = () => {
 
     e.preventDefault();
     try {
-      const response = await fetch("https://emasa.cibs.tech/send-mail.php", {
+      const response = await fetch("/send-mail.php", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
