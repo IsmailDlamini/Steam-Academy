@@ -40,7 +40,7 @@
 }
 
 .LandingPageContainer .ImageContainer .Image img{
-  width: 130%;
+  width: 50vw;
   height: 70%;
   transform: translateX(-10%) translateY(10px);
 
@@ -248,7 +248,7 @@
 
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1023px) {
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
   .LandingPageContainer {
     width: 100vw;
     display: flex;

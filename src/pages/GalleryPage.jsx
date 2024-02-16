@@ -30,7 +30,7 @@ const GalleryPage = () => {
     }, 6000);
 
     return () => clearInterval(intervalId);
-  }, [slides.length]);
+  }, [slides.length, currentSlide]);
 
   const slide_nav = slides.map((slide, index) => {
     return (
@@ -70,7 +70,36 @@ const GalleryPage = () => {
         <div className="image-slide-show-container">
           <div className="slide-show-image">
             <div className="image-container">
-              <img src={slides[currentSlide]} alt="slide-show-image-1" />
+              <img
+                src={slides[0]}
+                alt="slide-show-image-1"
+                className={`${currentSlide == 0 ? "showing" : ""}`}
+              />
+              <img
+                src={slides[1]}
+                alt="slide-show-image-2"
+                className={`${currentSlide == 1 ? "showing" : ""}`}
+              />
+              <img
+                src={slides[2]}
+                alt="slide-show-image-3"
+                className={`${currentSlide == 2 ? "showing" : ""}`}
+              />
+              <img
+                src={slides[3]}
+                alt="slide-show-image-4"
+                className={`${currentSlide == 3 ? "showing" : ""}`}
+              />
+              <img
+                src={slides[4]}
+                alt="slide-show-image-5"
+                className={`${currentSlide == 4 ? "showing" : ""}`}
+              />
+              <img
+                src={slides[5]}
+                alt="slide-show-image-6"
+                className={`${currentSlide == 5 ? "showing" : ""}`}
+              />
             </div>
             <div className="slide-nav">
               <ul>{slide_nav}</ul>

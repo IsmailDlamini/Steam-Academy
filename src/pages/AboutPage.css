@@ -390,7 +390,7 @@
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
   .about-page-container .first-half {
     width: 100vw;
     display: flex;
