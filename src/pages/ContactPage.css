@@ -29,8 +29,11 @@
   bottom: -5%;
   flex: 1;
 }
+.contact-page-container .social-media-icons a{
+  margin: 0 auto;
+}
 
-.contact-page-container .social-media-icons img {
+.contact-page-container .social-media-icons a img {
   margin: 0 auto;
   width: 9vw;
   height: 9vw;
@@ -242,7 +245,7 @@
     position: absolute;
   }
 
-  .contact-page-container .social-media-icons img {
+  .contact-page-container .social-media-icons a img {
     margin: 0 auto;
     width: 25vw;
     height: 25vw;
@@ -268,7 +271,7 @@
   .contact-page-container .contact-section .image {
     width: 100%;
     height: 200px;
-    background-image: url("C:\Users\Ismail\Desktop\ClientProject1\client\src\assets\contactImageMobile.png");
+    background-image: url("C:\Users\Ismail\Desktop\ClientProject1\client\src\assets\contactImageMobile.jpg");
     background-size: cover;
   }
 
@@ -343,7 +346,7 @@
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
   .contact-page-container {
     display: flex;
     flex-direction: column-reverse;
@@ -369,7 +372,7 @@
     position: absolute;
   }
 
-  .contact-page-container .social-media-icons img {
+  .contact-page-container .social-media-icons a img {
     margin: 0 auto;
     width: 20vw;
     height: 20vw;
@@ -394,7 +397,7 @@
   .contact-page-container .contact-section .image {
     width: 100%;
     height: 200px;
-    background-image: url("C:\Users\Ismail\Desktop\ClientProject1\client\src\assets\contactImageMobile.png");
+    background-image: url("C:\Users\Ismail\Desktop\ClientProject1\client\src\assets\contactImageMobile.jpg");
     background-size: cover;
   }
 

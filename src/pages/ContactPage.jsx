@@ -12,8 +12,12 @@ const ContactPage = () => {
     enquiry: "",
   });
 
-  const handleSubmit = async (e) => {
+  const facebook_link =
+    "https://www.facebook.com/people/Sibongile-Khabonina/100069573130153/?paipv=0&eav=AfYpBmAKpJOL5PC8ckgL_uJiaUKJPlaCKb5UTpTo64VIkQGALDqt7_fdezkQqZW7lpc&_rdr";
 
+  const linkedin_link = "https://www.linkedin.com/in/gama-sibongile-9b785875/?originalSubdomain=za"
+
+  const handleSubmit = async (e) => {
     // https://emasa.cibs.tech/send-mail.php --> external use
     // /send-mail.php --> use on server
 
@@ -51,10 +55,18 @@ const ContactPage = () => {
       <div className="contact-page-container">
         <div className="social-media-icons">
           <div>
-            <img src={linkedin} alt="linkedin" />
-            <img src={facebook} alt="facebook" />
-            <img src={linkedin} alt="linkedin" />
-            <img src={facebook} alt="facebook" />
+            <a href={linkedin_link}>
+              <img src={linkedin} alt="linkedin" />
+            </a>
+            <a href={facebook_link}>
+              <img src={facebook} alt="facebook" />
+            </a>
+            <a href={linkedin_link}>
+              <img src={linkedin} alt="linkedin" />
+            </a>
+            <a href={facebook_link}>
+              <img src={facebook} alt="facebook" />
+            </a>
           </div>
         </div>
 

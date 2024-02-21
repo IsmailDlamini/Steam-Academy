@@ -32,10 +32,11 @@ const Footer = () => {
         </div>
 
         <div className="social-icons">
-          <a href="www.facebook.com">
+          <a href="https://www.facebook.com/people/Sibongile-Khabonina/100069573130153/?paipv=0&eav=AfYpBmAKpJOL5PC8ckgL_uJiaUKJPlaCKb5UTpTo64VIkQGALDqt7_fdezkQqZW7lpc&_rdr
+">
             <img src={facebookIcon} alt="Facebook" />
           </a>
-          <a href="www.linkedin.com">
+          <a href="https://www.linkedin.com/in/gama-sibongile-9b785875/?originalSubdomain=za">
             <img src={linkedinIcon} alt="Linkedin" />
           </a>
         </div>
