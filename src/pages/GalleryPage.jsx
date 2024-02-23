@@ -70,34 +70,29 @@ const GalleryPage = () => {
   const linkedin_link =
     "https://www.linkedin.com/in/gama-sibongile-9b785875/?originalSubdomain=za";
 
-    const LoadImages = () => {
-      return [...Array(14)].map((_, index) => (
-        <img
-          src={slides[index]}
-          alt={`slide-show-image-${index + 1}`}
-          className={`${currentSlide === index ? "showing" : ""}`}
-          key={index}
-        />
-      ));
-    }; 
+  const LoadImages = () => {
+    return [...Array(14)].map((_, index) => (
+      <img
+        src={slides[index]}
+        alt={`slide-show-image-${index + 1}`}
+        className={`${currentSlide === index ? "showing" : ""}`}
+        key={index}
+      />
+    ));
+  };
+
+  const Linkedin = <img src={linkedin} alt="linkedin" />;
+  const Facebook = <img src={facebook} alt="facebook" />;
 
   return (
     <>
       <div className="gallery-page-container">
         <div className="social-media-icons">
           <div>
-            <a href={linkedin_link}>
-              <img src={linkedin} alt="linkedin" />
-            </a>
-            <a href={facebook_link}>
-              <img src={facebook} alt="facebook" />
-            </a>
-            <a href={linkedin_link}>
-              <img src={linkedin} alt="linkedin" />
-            </a>
-            <a href={facebook_link}>
-              <img src={facebook} alt="facebook" />
-            </a>
+            <a href={linkedin_link}>{Linkedin}</a>
+            <a href={facebook_link}>{Facebook}</a>
+            <a href={linkedin_link}>{Linkedin}</a>
+            <a href={facebook_link}>{Facebook}</a>
           </div>
         </div>
         <div className="last-two">
@@ -111,79 +106,7 @@ const GalleryPage = () => {
         <div className="image-slide-show-container">
           <div className="slide-show-image">
             <div className="image-container">
-
               <LoadImages />
-              {LoadImages}
-              {/* <img
-                src={slides[0]}
-                alt="slide-show-image-1"
-                className={`${currentSlide == 0 ? "showing" : ""}`}
-              />
-              <img
-                src={slides[1]}
-                alt="slide-show-image-2"
-                className={`${currentSlide == 1 ? "showing" : ""}`}
-              />
-              <img
-                src={slides[2]}
-                alt="slide-show-image-3"
-                className={`${currentSlide == 2 ? "showing" : ""}`}
-              />
-              <img
-                src={slides[3]}
-                alt="slide-show-image-4"
-                className={`${currentSlide == 3 ? "showing" : ""}`}
-              />
-              <img
-                src={slides[4]}
-                alt="slide-show-image-5"
-                className={`${currentSlide == 4 ? "showing" : ""}`}
-              />
-              <img
-                src={slides[5]}
-                alt="slide-show-image-6"
-                className={`${currentSlide == 5 ? "showing" : ""}`}
-              />
-              <img
-                src={slides[6]}
-                alt="slide-show-image-7"
-                className={`${currentSlide == 6 ? "showing" : ""}`}
-              />
-              <img
-                src={slides[7]}
-                alt="slide-show-image-8"
-                className={`${currentSlide == 7 ? "showing" : ""}`}
-              />
-              <img
-                src={slides[8]}
-                alt="slide-show-image-9"
-                className={`${currentSlide == 8 ? "showing" : ""}`}
-              />
-              <img
-                src={slides[9]}
-                alt="slide-show-image-10"
-                className={`${currentSlide == 9 ? "showing" : ""}`}
-              />
-              <img
-                src={slides[10]}
-                alt="slide-show-image-11"
-                className={`${currentSlide == 10 ? "showing" : ""}`}
-              />
-              <img
-                src={slides[11]}
-                alt="slide-show-image-12"
-                className={`${currentSlide == 11 ? "showing" : ""}`}
-              />
-              <img
-                src={slides[12]}
-                alt="slide-show-image-13"
-                className={`${currentSlide == 12 ? "showing" : ""}`}
-              />
-              <img
-                src={slides[13]}
-                alt="slide-show-image-14"
-                className={`${currentSlide == 13 ? "showing" : ""}`}
-              /> */}
             </div>
             <div className="slide-nav">
               <ul>{slide_nav}</ul>

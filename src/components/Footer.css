@@ -146,7 +146,7 @@
       }
   }
 
-  @media only screen and (min-width: 600px) and (max-width: 1024px) {
+  @media only screen and (min-width: 600px) and (max-width: 1000px) {
     .footer {
         width: 100%;
         padding: 40px 30px;
@@ -196,21 +196,23 @@
 
       .footer .social-icons {
         margin-left: auto;
-        margin-right: -35px;
+        margin-right: -70px;
         display: flex;
         flex-direction: column;
       }
     
-       .footer .social-icons img{
-        height: 4em;
+       .footer .social-icons a img{
+        height: 5em;
       }
 
-      .footer .social-icons img:nth-child(1){
-        transform: translate(0px, 0px);
+      .footer .social-icons a img:nth-child(1){
+        transform: translate(0, 0);
       }
     
-      .footer .social-icons img:nth-child(2){
-        transform: translate(0vw, 0px);
+      .footer .social-icons a img:nth-child(2){
+        transform: translate(0, 0);
+        position: absolute;
+        bottom: 0;
       }
       
   }

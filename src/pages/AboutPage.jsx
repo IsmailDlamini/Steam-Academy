@@ -10,6 +10,13 @@ import e from '../assets/e.png'
 import s from '../assets/s.png'
 import a from '../assets/a.png'
 
+import r_mobile from '../assets/R-mobile.jpg'
+import i_mobile from '../assets/I-mobile.jpg'
+import p_mobile from '../assets/P-mobile.jpg'
+import e_mobile from '../assets/E-mobile.jpg'
+import s_mobile from '../assets/S-mobile.jpg'
+import a_mobile from '../assets/A-mobile.jpg'
+
 const AboutPage = () => {
   return (
     <>
@@ -80,7 +87,8 @@ const AboutPage = () => {
               <div className="project-title">Resilience</div>
               <div className="image-description-container">
                 <div className="project-image">
-                  <img src={r} alt="project image" />
+                  <img src={r} alt="project image" className="desktop-letter"/>
+                  <img src={r_mobile} alt="project image" className="mobile-letter"/>
                 </div>
                 <div className="project-description">
                 Develop leadership that is resilient and self-aware.
@@ -92,7 +100,8 @@ const AboutPage = () => {
               <div className="project-title">Innovate</div>
               <div className="image-description-container">
                 <div className="project-image">
-                  <img src={i} alt="project image" />
+                  <img src={i} alt="project image" className="desktop-letter"/>
+                  <img src={i_mobile} alt="project image" className="mobile-letter"/>
                 </div>
                 <div className="project-description">
                 Create a space where children can be curious, creative, and innovative.
@@ -106,7 +115,8 @@ const AboutPage = () => {
               <div className="project-title">Partnership</div>
               <div className="image-description-container">
                 <div className="project-image">
-                  <img src={p} alt="project image" />
+                  <img src={p} alt="project image" className="desktop-letter"/>
+                  <img src={p_mobile} alt="project image" className="mobile-letter"/>
                 </div>
                 <div className="project-description">
                 Promote collaboration, diversity, and respect.
@@ -122,7 +132,8 @@ const AboutPage = () => {
               <div className="project-title">Excellence</div>
               <div className="image-description-container">
                 <div className="project-image">
-                  <img src={e} alt="project image" />
+                  <img src={e} alt="project image" className="desktop-letter"/>
+                  <img src={e_mobile} alt="project image" className="mobile-letter"/>
                 </div>
                 <div className="project-description">
                 Nurture a culture of excellence and continuous improvement.
@@ -134,7 +145,8 @@ const AboutPage = () => {
               <div className="project-title">Sustainable</div>
               <div className="image-description-container">
                 <div className="project-image">
-                  <img src={s} alt="project image" />
+                  <img src={s} alt="project image" className="desktop-letter"/>
+                  <img src={s_mobile} alt="project image" className="mobile-letter"/>
                 </div>
                 <div className="project-description">
                 Apply sustainable solutions in our innovative projects.
@@ -147,7 +159,8 @@ const AboutPage = () => {
               <div className="project-title">Autonomy</div>
               <div className="image-description-container">
                 <div className="project-image">
-                  <img src={a} alt="project image" />
+                  <img src={a} alt="project image" className="desktop-letter"/>
+                  <img src={a_mobile} alt="project image" className="mobile-letter"/>
                 </div>
                 <div className="project-description">
                 Develop learners that are independent yet aware of the VUCA world.

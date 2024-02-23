@@ -195,6 +195,7 @@
   .service-page-container .Left .content {
     margin-top: 80px;
     width: 90%;
+    text-align: left;
   }
 
   .service-page-container .Left .content div:nth-child(1) {
@@ -229,6 +230,7 @@
   .service-page-container .Right .content {
     margin-top: 50px;
     width: 85%;
+    text-align: left;
   }
 
   .service-page-container .Right .content div:nth-child(1) {
@@ -263,9 +265,21 @@
     width: 100%;
     margin-bottom: 0;
   }
+
+  .service-page-container .Left .content .paragraphs .paragraph .title{
+    font-weight: 700;
+    margin-top: 25px;
+    text-align: left;
+  }
+  
+  .service-page-container .Left .content .paragraphs .paragraph .text{
+    margin-top: 0;
+    text-align: left;
+  }
+  
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
   .service-page-container {
     width: 100vw;
     height: fit-content;
@@ -283,6 +297,8 @@
     justify-content: center;
     padding-bottom: 20px;
     white-space: normal;
+    padding-top: 50px;
+    text-align: left;
   }
 
   .service-page-container .Right {
@@ -294,7 +310,8 @@
 
   .service-page-container .Left .content {
     margin-top: 80px;
-    width: 85%;
+    width: 90%;
+    text-align: left;
   }
 
   .service-page-container .Left .content div:nth-child(1) {
@@ -303,6 +320,7 @@
 
   .service-page-container .Left .content div:nth-child(2) div {
     font-size: 3.5vw;
+    text-align: left;
   }
 
   .service-page-container
