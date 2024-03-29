@@ -42,11 +42,13 @@ const Header = (prop) => {
         </div>
 
         <div className="ExternalLink">
-          <img
-            src={ExternalLogo}
-            className="ExternalLogo"
-            alt="sisters in science"
-          />
+          <Link to={"https://sis4teens.co.za"}>
+            <img
+              src={ExternalLogo}
+              className="ExternalLogo"
+              alt="sisters in science"
+            />
+          </Link>
         </div>
 
         <div className="MobileNav">
@@ -65,7 +67,7 @@ const Header = (prop) => {
         }`}
       >
         <ul>
-          <Link to={"/"} style={{ textDecoration: "none" }} >
+          <Link to={"/"} style={{ textDecoration: "none" }}>
             <li onClick={ToggleMobileNavBar}>Home</li>
           </Link>
           <Link to={"/about"} style={{ textDecoration: "none" }}>
@@ -80,7 +82,10 @@ const Header = (prop) => {
           <Link to={"/gallery"} style={{ textDecoration: "none" }}>
             <li onClick={ToggleMobileNavBar}>Gallery</li>
           </Link>
-          <Link style={{ textDecoration: "none" }}>
+          <Link
+            style={{ textDecoration: "none" }}
+            to={"https://sis4teens.co.za"}
+          >
             <li>
               <img src={ExternalLogo} alt="sisters in science" />
             </li>

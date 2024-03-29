@@ -17,6 +17,21 @@ import Gallery_Image_11 from "../assets/Gallery-Image-11.jpg";
 import Gallery_Image_12 from "../assets/Gallery-Image-12.jpg";
 import Gallery_Image_13 from "../assets/Gallery-Image-13.jpg";
 import Gallery_Image_14 from "../assets/Gallery-Image-14.jpg";
+import Gallery_Image_15 from "../assets/Gallery-Image-15.jpg";
+import Gallery_Image_16 from "../assets/Gallery-Image-16.jpg";
+import Gallery_Image_17 from "../assets/Gallery-Image-17.jpg";
+import Gallery_Image_18 from "../assets/Gallery-Image-18.jpg";
+import Gallery_Image_19 from "../assets/Gallery-Image-19.jpg";
+import Gallery_Image_20 from "../assets/Gallery-Image-20.jpg";
+import Gallery_Image_21 from "../assets/Gallery-Image-21.jpg";
+import Gallery_Image_22 from "../assets/Gallery-Image-22.jpg";
+import Gallery_Image_23 from "../assets/Gallery-Image-23.jpg";
+import Gallery_Image_24 from "../assets/Gallery-Image-24.jpg";
+import Gallery_Image_25 from "../assets/Gallery-Image-25.jpg";
+import Gallery_Image_26 from "../assets/Gallery-Image-26.jpg";
+import Gallery_Image_27 from "../assets/Gallery-Image-27.jpg";
+import Gallery_Image_28 from "../assets/Gallery-Image-28.jpg";
+
 import { useEffect } from "react";
 import { useState } from "react";
 
@@ -36,6 +51,20 @@ const GalleryPage = () => {
     Gallery_Image_12,
     Gallery_Image_13,
     Gallery_Image_14,
+    Gallery_Image_15,
+    Gallery_Image_16,
+    Gallery_Image_17,
+    Gallery_Image_18,
+    Gallery_Image_19,
+    Gallery_Image_20,
+    Gallery_Image_21,
+    Gallery_Image_22,
+    Gallery_Image_23,
+    Gallery_Image_24,
+    Gallery_Image_25,
+    Gallery_Image_26,
+    Gallery_Image_27,
+    Gallery_Image_28,
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -71,7 +100,7 @@ const GalleryPage = () => {
     "https://www.linkedin.com/in/gama-sibongile-9b785875/?originalSubdomain=za";
 
   const LoadImages = () => {
-    return [...Array(14)].map((_, index) => (
+    return [...Array(28)].map((_, index) => (
       <img
         src={slides[index]}
         alt={`slide-show-image-${index + 1}`}
