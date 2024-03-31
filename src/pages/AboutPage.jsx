@@ -8,6 +8,7 @@ import i from '../assets/i.png'
 import p from '../assets/p.png'
 import e from '../assets/e.png'
 import s from '../assets/s.png'
+
 import a from '../assets/a.png'
 import r_mobile from '../assets/R-mobile.jpg'
 import i_mobile from '../assets/I-mobile.jpg'
