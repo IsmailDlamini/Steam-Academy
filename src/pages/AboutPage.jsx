@@ -4,6 +4,7 @@ import aboutPageImage from "../assets/aboutPageImage.svg";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import r from '../assets/r.png'
+
 import i from '../assets/i.png'
 import p from '../assets/p.png'
 import e from '../assets/e.png'
