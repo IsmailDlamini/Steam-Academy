@@ -58,7 +58,7 @@
 .contact-page-container .contact-section .image {
   width: 25%;
   height: 100%;
-  background-image: url("C:\Users\Ismail\Desktop\ClientProject1\client\src\assets\contactImage.svg");
+  background-image: url("../assets/contactImage.svg");
   background-size: cover;
 }
 
@@ -271,7 +271,7 @@
   .contact-page-container .contact-section .image {
     width: 100%;
     height: 200px;
-    background-image: url("C:\Users\Ismail\Desktop\ClientProject1\client\src\assets\contactImageMobile.jpg");
+    background-image: url("../assets/contactImageMobile.jpg");
     background-size: cover;
   }
 
@@ -397,7 +397,7 @@
   .contact-page-container .contact-section .image {
     width: 100%;
     height: 200px;
-    background-image: url("C:\Users\Ismail\Desktop\ClientProject1\client\src\assets\contactImageMobile.jpg");
+    background-image: url("../assets/contactImageMobile.jpg");
     background-size: cover;
   }
 
