@@ -14,7 +14,7 @@ const LandingPage = () => {
               We Transform <span>E</span>-Waste Into <span>E</span>nnovation
             </div>
             <div>
-              Welcome to Test Academy, where creativity meets sustainability!
+              Welcome to STEAM Academy, where creativity meets sustainability!
               Our E-Waste Repurposing Program empowers students to explore the
               fascinating world of technology while making a positive impact on
               the environment.
