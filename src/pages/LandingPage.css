@@ -21,6 +21,21 @@
   flex-direction: column;
 }
 
+.fade-in{
+  opacity: 0;
+  transition: opacity 350ms ease-in;
+  /* animation: 'fadein 2s ease forwards'; */
+}
+
+.fade-in.appear{
+  opacity: 1;
+  /* animation: 'fadein 2s ease forwards'; */
+}
+
+.hidall{
+  opacity: 0;
+}
+
 .LandingPageContainer .ImageContainer {
   width: 40vw;
   background-color: rgba(92, 123, 82, 1);
@@ -361,6 +376,12 @@
     bottom: 0;
 
   }
-
   
+}
+/* .LandingPageContainer > * {
+  opacity: 0;
+} */
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }

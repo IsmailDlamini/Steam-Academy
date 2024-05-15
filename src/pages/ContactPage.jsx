@@ -1,9 +1,10 @@
+import { useEffect, useRef, useState } from "react";
 import Header from "../components/Header";
 import "./ContactPage.css";
 import linkedin from "../assets/linkedin.svg";
 import facebook from "../assets/facebook.svg";
 import Footer from "../components/Footer";
-import { useState } from "react";
+import LoadingSpinner from "../components/LoadingSpinner";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -49,10 +50,69 @@ const ContactPage = () => {
       [e.target.name]: e.target.value,
     });
   };
+  const containerRef = useRef(null);
+
+  const [doneLoading, setDoneLoading] = useState(false);
+ 
+  useEffect(() => {
+
+    const timeoutId = setTimeout(() => {
+      setDoneLoading(true);
+    }, 1800)
+
+    if(doneLoading){
+      const nodes = containerRef.current.querySelectorAll("*");
+      nodes.forEach((node) => {
+        node.classList.add("fade-in");
+      });
+      const elements = containerRef.current.querySelectorAll(".fade-in");
+  
+      const AppearOptions = {
+        threshold: 0,
+        rootMargin: "0px 0px -10px 0px",
+      };
+  
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            if (entry.target.classList.contains("fade-in")) {
+              entry.target.classList.add("appear");
+            }
+          }
+        });
+      }, AppearOptions);
+  
+      elements.forEach((element) => {
+        observer.observe(element);
+      });
+
+      return () => {
+        elements.forEach((element) => {
+          observer.unobserve(element);
+        });
+        clearTimeout(timeoutId);
+      };
+    }
+
+    else {
+      const nodes = containerRef.current.querySelectorAll("*");
+      nodes.forEach((node) => {
+        node.classList.add("fade-in");
+      });
+
+
+      
+    }
+   
+  }, [doneLoading]);
+
+
+ 
 
   return (
     <>
-      <div className="contact-page-container">
+     <LoadingSpinner />
+      <div className="contact-page-container" ref={containerRef}>
         <div className="social-media-icons">
           <div>
             <a href={linkedin_link}>

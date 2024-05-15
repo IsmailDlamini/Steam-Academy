@@ -31,7 +31,7 @@ import Gallery_Image_25 from "../assets/Gallery-Image-25.jpg";
 import Gallery_Image_26 from "../assets/Gallery-Image-26.jpg";
 import Gallery_Image_27 from "../assets/Gallery-Image-27.jpg";
 import Gallery_Image_28 from "../assets/Gallery-Image-28.jpg";
-
+import LoadingSpinner from "../components/LoadingSpinner";
 import { useEffect } from "react";
 import { useState } from "react";
 
@@ -113,8 +113,11 @@ const GalleryPage = () => {
   const Linkedin = <img src={linkedin} alt="linkedin" />;
   const Facebook = <img src={facebook} alt="facebook" />;
 
+ 
+
   return (
     <>
+     <LoadingSpinner />
       <div className="gallery-page-container">
         <div className="social-media-icons">
           <div>
@@ -142,18 +145,6 @@ const GalleryPage = () => {
             </div>
           </div>
 
-          <div className="extra-images first">
-            <div className="extra-image">
-              <img src={slides[13]} alt="extra-image-1" />
-            </div>
-            <div className="extra-image">
-              <img src={slides[12]} alt="extra-image-2" />
-            </div>
-            <div className="extra-image">
-              <img src={slides[11]} alt="extra-image-3" />
-            </div>
-          </div>
-
           <div className="extra-images second">
             <div className="extra-image">
               <img src={slides[12]} alt="extra-image-3" />
@@ -167,6 +158,13 @@ const GalleryPage = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="extra-images first">
+          {slides.map((slide, index) => (
+            <div className="extra-image" onClick={() => HandleSlideNav(index)} key={index}>
+              <img src={slide} alt={`extra-image-${index}`} />
+            </div>
+          ))}
       </div>
       <Header color="rgba(245, 245, 245, 1)" />
       <Footer />

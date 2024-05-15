@@ -1,26 +1,77 @@
+import { useEffect, useRef, useState } from "react";
 import Header from "../components/Header";
 import "./AboutPage.css";
 import aboutPageImage from "../assets/aboutPageImage.svg";
 import Footer from "../components/Footer";
+import LoadingSpinner from "../components/LoadingSpinner";
 import { Link } from "react-router-dom";
-import r from '../assets/r.png'
-import i from '../assets/i.png'
-import p from '../assets/p.png'
-import e from '../assets/e.png'
-import s from '../assets/s.png'
+import r from "../assets/r.png";
+import i from "../assets/i.png";
+import p from "../assets/p.png";
+import e from "../assets/e.png";
+import s from "../assets/s.png";
 
-import a from '../assets/a.png'
-import r_mobile from '../assets/R-mobile.jpg'
-import i_mobile from '../assets/I-mobile.jpg'
-import p_mobile from '../assets/P-mobile.jpg'
-import e_mobile from '../assets/E-mobile.jpg'
-import s_mobile from '../assets/S-mobile.jpg'
-import a_mobile from '../assets/A-mobile.jpg'
+import a from "../assets/a.png";
+import r_mobile from "../assets/R-mobile.jpg";
+import i_mobile from "../assets/I-mobile.jpg";
+import p_mobile from "../assets/P-mobile.jpg";
+import e_mobile from "../assets/E-mobile.jpg";
+import s_mobile from "../assets/S-mobile.jpg";
+import a_mobile from "../assets/A-mobile.jpg";
 
 const AboutPage = () => {
+  const containerRef = useRef(null);
+  const [doneLoading, setDoneLoading] = useState(false);
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setDoneLoading(true);
+    }, 1800);
+
+    if (doneLoading) {
+      const nodes = containerRef.current.querySelectorAll("*");
+      nodes.forEach((node) => {
+        node.classList.add("fade-in");
+      });
+      const elements = containerRef.current.querySelectorAll(".fade-in");
+
+      const AppearOptions = {
+        threshold: 0,
+        rootMargin: "0px 0px -10px 0px",
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            if (entry.target.classList.contains("fade-in")) {
+              entry.target.classList.add("appear");
+            }
+          }
+        });
+      }, AppearOptions);
+
+      elements.forEach((element) => {
+        observer.observe(element);
+      });
+
+      return () => {
+        elements.forEach((element) => {
+          observer.unobserve(element);
+        });
+        clearTimeout(timeoutId);
+      };
+    } else {
+      const nodes = containerRef.current.querySelectorAll("*");
+      nodes.forEach((node) => {
+        node.classList.add("fade-in");
+      });
+    }
+  }, [doneLoading]);
+
   return (
     <>
-      <div className="about-page-container">
+      <LoadingSpinner />
+      <div className="about-page-container" ref={containerRef}>
         <div className="first-half">
           <div className="information-container">
             <div className="page-content">
@@ -37,9 +88,9 @@ const AboutPage = () => {
                 </div>
 
                 <div>
-                  Our mission extends beyond transforming e-waste; it{`'`}s about
-                  uplifting communities in Mpumalanga by equipping them with
-                  valuable tech skills.
+                  Our mission extends beyond transforming e-waste; it{`'`}s
+                  about uplifting communities in Mpumalanga by equipping them
+                  with valuable tech skills.
                 </div>
 
                 <div>
@@ -87,11 +138,15 @@ const AboutPage = () => {
               <div className="project-title">Resilience</div>
               <div className="image-description-container">
                 <div className="project-image">
-                  <img src={r} alt="project image" className="desktop-letter"/>
-                  <img src={r_mobile} alt="project image" className="mobile-letter"/>
+                  <img src={r} alt="project image" className="desktop-letter" />
+                  <img
+                    src={r_mobile}
+                    alt="project image"
+                    className="mobile-letter"
+                  />
                 </div>
                 <div className="project-description">
-                Develop leadership that is resilient and self-aware.
+                  Develop leadership that is resilient and self-aware.
                 </div>
               </div>
             </div>
@@ -100,31 +155,36 @@ const AboutPage = () => {
               <div className="project-title">Innovate</div>
               <div className="image-description-container">
                 <div className="project-image">
-                  <img src={i} alt="project image" className="desktop-letter"/>
-                  <img src={i_mobile} alt="project image" className="mobile-letter"/>
+                  <img src={i} alt="project image" className="desktop-letter" />
+                  <img
+                    src={i_mobile}
+                    alt="project image"
+                    className="mobile-letter"
+                  />
                 </div>
                 <div className="project-description">
-                Create a space where children can be curious, creative, and innovative.
-
+                  Create a space where children can be curious, creative, and
+                  innovative.
                 </div>
               </div>
             </div>
-
 
             <div className="project-container">
               <div className="project-title">Partnership</div>
               <div className="image-description-container">
                 <div className="project-image">
-                  <img src={p} alt="project image" className="desktop-letter"/>
-                  <img src={p_mobile} alt="project image" className="mobile-letter"/>
+                  <img src={p} alt="project image" className="desktop-letter" />
+                  <img
+                    src={p_mobile}
+                    alt="project image"
+                    className="mobile-letter"
+                  />
                 </div>
                 <div className="project-description">
-                Promote collaboration, diversity, and respect.
+                  Promote collaboration, diversity, and respect.
                 </div>
               </div>
             </div>
-
-
           </div>
 
           <div className="right">
@@ -132,11 +192,15 @@ const AboutPage = () => {
               <div className="project-title">Excellence</div>
               <div className="image-description-container">
                 <div className="project-image">
-                  <img src={e} alt="project image" className="desktop-letter"/>
-                  <img src={e_mobile} alt="project image" className="mobile-letter"/>
+                  <img src={e} alt="project image" className="desktop-letter" />
+                  <img
+                    src={e_mobile}
+                    alt="project image"
+                    className="mobile-letter"
+                  />
                 </div>
                 <div className="project-description">
-                Nurture a culture of excellence and continuous improvement.
+                  Nurture a culture of excellence and continuous improvement.
                 </div>
               </div>
             </div>
@@ -145,30 +209,36 @@ const AboutPage = () => {
               <div className="project-title">Sustainable</div>
               <div className="image-description-container">
                 <div className="project-image">
-                  <img src={s} alt="project image" className="desktop-letter"/>
-                  <img src={s_mobile} alt="project image" className="mobile-letter"/>
+                  <img src={s} alt="project image" className="desktop-letter" />
+                  <img
+                    src={s_mobile}
+                    alt="project image"
+                    className="mobile-letter"
+                  />
                 </div>
                 <div className="project-description">
-                Apply sustainable solutions in our innovative projects.
+                  Apply sustainable solutions in our innovative projects.
                 </div>
               </div>
             </div>
-
 
             <div className="project-container">
               <div className="project-title">Autonomy</div>
               <div className="image-description-container">
                 <div className="project-image">
-                  <img src={a} alt="project image" className="desktop-letter"/>
-                  <img src={a_mobile} alt="project image" className="mobile-letter"/>
+                  <img src={a} alt="project image" className="desktop-letter" />
+                  <img
+                    src={a_mobile}
+                    alt="project image"
+                    className="mobile-letter"
+                  />
                 </div>
                 <div className="project-description">
-                Develop learners that are independent yet aware of the VUCA world.
+                  Develop learners that are independent yet aware of the VUCA
+                  world.
                 </div>
               </div>
             </div>
-
-
           </div>
         </div>
       </div>

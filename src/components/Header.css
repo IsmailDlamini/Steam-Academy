@@ -18,11 +18,14 @@ body {
 
 .PageHeader {
     width: 100vw;
-    position: absolute;
+    position: fixed;
+    background-color: rgb(245, 245, 245, 0.95);
+    padding: 10px;
     top: 0%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     z-index: 5;
   }
   
@@ -41,10 +44,7 @@ body {
     cursor: pointer;
   }
   
-  .PageHeader .NavBar li:nth-child(4) {
-    color: rgba(245, 245, 245, 1);
-  }
-  
+
   .PageHeader .Logo {
     margin-left: 70px;
     cursor: pointer;
@@ -68,7 +68,7 @@ body {
 
 
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1000px) {
 
     body{
       overflow-x: hidden;
@@ -76,11 +76,13 @@ body {
 
     .PageHeader {
         width: 100vw;
-        position: absolute;
+        position: fixed;
         top: 0%;
         display: flex;
         justify-content: space-between;
-        margin-top: 20px;
+        background-color: rgb(245, 245, 245, 0.95);
+        padding: 20px 10px;
+        /* margin-top: 20px; */
       }
     
       .PageHeader .NavBar ul {
@@ -113,10 +115,11 @@ body {
         width: 100vw;
         height:fit-content;
         background-color: rgba(92, 123, 82, 1);
-        position: absolute;
-        top: 70px;
+        position: fixed;
+        top: 23vw;
         display: flex;
         align-items: center;
+        justify-content: center;
         transition: all 0.3s ease-in;
         z-index: 3;
         overflow: hidden;
@@ -171,9 +174,24 @@ body {
   }
 
   @media only screen and (min-width: 600px) and (max-width: 1000px) {
-
+    .MobileNavBar ul li {
+      font-size: 2.7vw;
+    }
+    .MobileNavBar {
+      top: 16vw
+    }
+    .PageHeader .Logo {
+      margin-left: 20px;
+      cursor: pointer;
+      width: 10vw;
+      height: 10vw;
+    }
+  
+    .PageHeader .Logo .SiteLogo {
+      height: 3em;
+    }
     
-    .PageHeader {
+    /* .PageHeader {
       width: 100vw;
       position: absolute;
       top: 0%;
@@ -186,16 +204,6 @@ body {
       display: none;
     }
   
-    .PageHeader .Logo {
-      margin-left: 20px;
-      cursor: pointer;
-      width: 10vw;
-      height: 10vw;
-    }
-  
-    .PageHeader .Logo .SiteLogo {
-      height: 3em;
-    }
   
     .PageHeader .MobileNav {
       display: contents;
@@ -268,6 +276,6 @@ body {
     .PageHeader .shift-mobile-nav {
       margin-right: -30px;
       transform: translateX(50vw);
-    }
+    } */
 
   }

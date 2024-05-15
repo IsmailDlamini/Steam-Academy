@@ -24,19 +24,19 @@ const Header = (prop) => {
         <div className="NavBar">
           <ul>
             <Link to={"/"} style={{ textDecoration: "none" }}>
-              <li style={{ color: prop.color }}>Home</li>
+              <li>Home</li>
             </Link>
             <Link to={"/about"} style={{ textDecoration: "none" }}>
-              <li style={{ color: prop.color }}>About Us</li>
+              <li>About Us</li>
             </Link>
             <Link to={"/services"} style={{ textDecoration: "none" }}>
-              <li style={{ color: prop.color }}>Services</li>
+              <li>Services</li>
             </Link>
             <Link to={"/contact"} style={{ textDecoration: "none" }}>
-              <li style={{ color: "rgba(245, 245, 245, 1)" }}>Contact Us</li>
+              <li>Contact Us</li>
             </Link>
             <Link to={"/gallery"} style={{ textDecoration: "none" }}>
-              <li style={{ color: "rgba(245, 245, 245, 1)" }}>Gallery</li>
+              <li>Gallery</li>
             </Link>
           </ul>
         </div>
